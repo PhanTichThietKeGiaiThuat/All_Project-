@@ -1,0 +1,24 @@
+﻿Xét đồ thị G =<V, E>: trong đó |V| = n, |E| = m. Với mỗi cạnh (u, v)∈E, ta đặt tương ứng với nó một số thực A<u,v> được gọi là trọng số của cạnh. Ta sẽ đặt A[u,v]=∞ nếu (u, v)∉E. Nếu dãy v0, v1,..., vk là một đường đi trên G thì tổng của tất cả các cạnh (A[vi-1,vi]) được gọi là độ dài của đường đi.
+     Bài toán tìm đường đi ngắn nhất trên đồ thị dưới dạng tổng quát có thể được phát biểu dưới dạng sau: Tìm đường đi ngắn nhất từ một đỉnh xuất phát s∈V(đỉnh nguồn) đến đỉnh cuối t∈V(đỉnh đích). Đường đi như vậy được gọi là đường đi ngắn nhất từ s đến t, độ dài của đường đi d(s,t) được gọi là khoảng cách ngắn nhất từ s đến t (trong trường hợp tổng quát d(s,t) có thể âm). Nếu như không tồn tại đường đi từ s đến t thì độ dài đường đi d(s,t)=∞. Nếu như mỗi chu trình trong đồ thị đều có độ dài dương thì trong đường đi ngắn nhất sẽ không có đỉnh nào bị lặp lại, đường đi như vậy được gọi là đường đi cơ bản. Nếu như đồ thị tồn tại một chu trình nào đó có độ dài âm, thì đường đi ngắn nhất có thể không xác định, vì ta có thể đi qua chu trình âm đó một số lần đủ lớn để độ dài của nó nhỏ hơn bất kỳ một số thực cho trước nào.
+1. Thuật toán gán nhãn.
+     Có rất nhiều thuật toán khác nhau được xây dựng để tìm đường đi ngắn nhất. Nhưng tư tưởng chung của các thuật toán đó có thể được mô tả như sau:
+     Từ ma trận trọng số A[u,v], u,v∈V, ta tìm cận trên d[v] của khoảng cách từ s đến tất cả các đỉnh v∈V. Mỗi khi phát hiện thấy d[u] + A[u,v] < d[v] thì cận trên d[v] sẽ được làm tốt lên bằng cách gán d[v] = d[u] + A[u, v]. Quá trình sẽ kết thúc khi nào ta không thể làm tốt hơn lên được bất kỳ cận trên nào, khi đó d[v] sẽ cho ta giá trị ngắn nhất từ đỉnh s đến đỉnh v. Giá trị d[v] được gọi là nhãn của đỉnh v. Ví dụ dưới đây thể hiện tư tưởng trên bằng một thuật toán gán nhãn tổng quát như sau:
+ Ví dụ.Tìm đường đi ngắn nhất từ đỉnh A đến đỉnh I trên đồ thị hình sau:
+
+Thuật toán tìm đường đi ngắn nhất Floyd
+Bước 1.Gán cho nhãn đỉnh A là 0; 
+Bước 2.Trong số các cạnh (cung) xuất phát từ A, ta chọn cạnh có độ dài nhỏ nhất, sau đó gán nhãn cho đỉnh đó bằng nhãn của đỉnh A cộng với độ dài cạnh tương ứng. Ta chọn được đỉnh C có trọng số AC = 5, nhãn d[C] = 0 + 5 = 5. 
+Bước 3.Tiếp đó, trong số các cạnh (cung) đi từ một đỉnh có nhãn là A hoặc C tới một đỉnh chưa được gán nhãn, ta chọn cạnh sao cho nhãn của đỉnh cộng với trọng số cạnh tương ứng là nhỏ nhất gán cho nhãn của đỉnh cuối của cạnh. Như vậy, ta lần lượt gán được các nhãn như sau: d[B] = 6 vì d[B] <d[C] + | CB| = 5 + 4; d[E] = 8; Tiếp tục làm như vậy cho tới khi đỉnh I được gán nhãn đó chính là độ dài đường đi ngắn nhất từ A đến I. Thực chất, nhãn của mỗi đỉnh chính là đường đi ngắn nhất từ đỉnh nguồn tới nó. 
+Quá trình có thể được mô tả như trong bảng dưới đây. 
+Bước	Đỉnh được gán nhãn	Nhãn các đỉnh	Đỉnh đã dùng để gán nhãn
+Khởi tạo	A	0	A
+1	C	0+5 =5	A
+2	B	0+6 = 6	A
+3	E	0+8 = 8	A
+4	D	5+4 = 9	C
+5	F	5+7 = 13	B
+6	H	8+6 = 14	E
+7	G	9+6 = 15	D
+8	I	15 + 3 = 18	G Như vậy, độ dài đường đi ngắn nhất từ A đến I là 18. Đường đi ngắn nhất từ A đến I qua các đỉnh: A-> C-> D -> G -> I.
+2. Thuật toán Floy
+    Để tìm đường đi ngắn nhất giữa tất cả các cặp đỉnh của đồ thị, chúng ta có thể sử dụng n lần thuật toán Ford_Bellman hoặc Dijkstra (trong trường hợp trọng số không âm). Tuy nhiên, trong cả hai thuật toán được sử dụng đều có độ phức tạp tính toán lớn (chí ít là O(n^3))

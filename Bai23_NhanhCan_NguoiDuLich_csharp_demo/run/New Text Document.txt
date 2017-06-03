@@ -1,0 +1,54 @@
+﻿Bài toán người bán hàng - Phương pháp nhánh cận
+Bài toán:
+
+Bài toán người bán hàng (Traveling Saleman): Một người bán hàng trên hệ thống n thành phố. Giữa các thành phố có thể có hoặc không các đường nối, mỗi đường nối có chi phí xác định từ trước. Người bán hàng xuất phát từ một thành phố, đi tới tất cả các thành phố khác và mỗi thành phố đi qua một lần và quay trở lại thành phố ban đầu. Hãy xác định một hành trình sao cho tổng chi phí trên đường đi là nhỏ nhất.
+
+Phân tích:
+
+Biểu diễn mạng lưới giao thông giữa các thành phố như một đồ thị có trọng số G=(V,E)
+- Mỗi thành phố là một nút của đồ thị (đánh số 1,..,n)
+- Mỗi đường đi giữa các thành phố là một cạnh nối giữa các nút của đồ thị, có thể có hướng hoặc vô hướng, trên đó có ghi trọng số là chi phí đường đi
+Các cặp cạnh không có đường đi trọng số là ∞
+- Đỉnh xuất phát trùng với đỉnh kết thúc
+- Đường đi tìm được là dãy S=x1,x2,…,xn,x1=S với xi < V, (xi,xi+1) < E, có tổng chi phí nhỏ nhất
+- Sinh các dãy hoán vị 1..n và tính dãy có chi phí nhỏ nhất:
++ Quay lui
++ Nhánh cận
+Tiếp cận theo phương pháp nhánh cận:
+- Chi phí tốt nhất đã tìm được (BestCost). Ban đầu BestCost= +∞
+- Tại mỗi bước chọn xi : Chi phí đường đi từ x1 đến xi-1 là C
++ Với mỗi khả năng v, tính chi phí C1 = C + chi phí từ xi-1 tới v
++ Nếu C1 xấu hơn (lớn hơn) BestCost hoặc không có khả năng nào chấp nhận được cho xi thì lùi lại bước trước để xác định lại thành phần xi-1.
++ Nếu C1 tốt hơn (nhỏ hơn) BestCost thì chấp nhận xi theo khả năng v. Tiếp tục xác định xi+1,…
++ Đến khi gặp nghiệm (i=n+1 & xi=S):
+. Cập nhật đường đi tốt nhất hiện tại đã tìm được
+. Cập nhật giá trị BestCost mới: BestCost = C1
+- Kết thúc tìm kiếm nếu BestCost= +∞ => không có đường đi
+Mô tả dữ liệu
+
+- Đánh chỉ số các đỉnh của đồ thị từ 1..n
+- Biểu diễn đồ thị G bằng ma trận kề M = (cij) cỡ n x n
++ cij = cost nếu có cạnh nối đỉnh i với đỉnh j với chi phí cost
+= ∞ nếu không có đường đi
+- Mảng: Daqua[1..n] đánh dấu đỉnh i đã được đi qua trên đường đi hay chưa?
++ Daqua = true nếu đỉnh i đã có trên đường đi
+= false nếu ngược lại, đỉnh i chưa có trên đường đi
++ Khởi tạo: Daqua[1..n] = false
+
+Try(i,C)≡ //Sinh thành phần thứ i của cấu hình với chi phí hiện thời C
+for (v = 1..n)
+if (c[xi-1,v]< ∞)&(not Daqua[v])) )
+C1 = C + c[xi-1,v];
+if (C1 < BestCost) //Tốt hơn chi phí tốt nhất hiện có
+xi = v ;
+Daqua[v] = true;
+if (i = n+1)&(xi = S)
+;
+BestCost = C1; //Cập nhật chi phí tốt nhất
+else if (i<=n)
+Try(i+1,C1); //sinh thành phần tiếp theo với chi phí hiện thời C1
+endif;
+Daqua[v] = false;
+endif;
+endif;
+End.

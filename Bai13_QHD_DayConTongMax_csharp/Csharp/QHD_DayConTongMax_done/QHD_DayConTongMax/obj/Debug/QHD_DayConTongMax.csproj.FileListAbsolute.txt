@@ -1,0 +1,15 @@
+c:\users\thanhhuong\documents\visual studio 2015\Projects\QHD_DayConTongMax\QHD_DayConTongMax\bin\Debug\QHD_DayConTongMax.exe.config
+c:\users\thanhhuong\documents\visual studio 2015\Projects\QHD_DayConTongMax\QHD_DayConTongMax\bin\Debug\QHD_DayConTongMax.exe
+c:\users\thanhhuong\documents\visual studio 2015\Projects\QHD_DayConTongMax\QHD_DayConTongMax\bin\Debug\QHD_DayConTongMax.pdb
+c:\users\thanhhuong\documents\visual studio 2015\Projects\QHD_DayConTongMax\QHD_DayConTongMax\obj\Debug\QHD_DayConTongMax.csprojResolveAssemblyReference.cache
+c:\users\thanhhuong\documents\visual studio 2015\Projects\QHD_DayConTongMax\QHD_DayConTongMax\obj\Debug\QHD_DayConTongMax.exe
+c:\users\thanhhuong\documents\visual studio 2015\Projects\QHD_DayConTongMax\QHD_DayConTongMax\obj\Debug\QHD_DayConTongMax.pdb
+C:\Users\ThanhHuong\Documents\Visual Studio 2015\Projects\Phan tich thiet ke giai thuat\QHD_DayConTongMax\QHD_DayConTongMax\bin\Debug\QHD_DayConTongMax.exe.config
+C:\Users\ThanhHuong\Documents\Visual Studio 2015\Projects\Phan tich thiet ke giai thuat\QHD_DayConTongMax\QHD_DayConTongMax\obj\Debug\QHD_DayConTongMax.exe
+C:\Users\ThanhHuong\Documents\Visual Studio 2015\Projects\Phan tich thiet ke giai thuat\QHD_DayConTongMax\QHD_DayConTongMax\obj\Debug\QHD_DayConTongMax.pdb
+C:\Users\ThanhHuong\Documents\Visual Studio 2015\Projects\Phan tich thiet ke giai thuat\QHD_DayConTongMax\QHD_DayConTongMax\bin\Debug\QHD_DayConTongMax.exe
+C:\Users\ThanhHuong\Documents\Visual Studio 2015\Projects\Phan tich thiet ke giai thuat\QHD_DayConTongMax\QHD_DayConTongMax\bin\Debug\QHD_DayConTongMax.pdb
+C:\Users\ThanhHuong\Documents\Visual Studio 2015\Projects\Phan tich thiet ke giai thuat\QHD_DayConTongMax\QHD_DayConTongMax\obj\Debug\QHD_DayConTongMax.csprojResolveAssemblyReference.cache
+C:\Users\ThanhHuong\Documents\Visual Studio 2015\Projects\Phan tich thiet ke giai thuat\QHD_DayConTongMax_done\QHD_DayConTongMax\bin\Debug\QHD_DayConTongMax.exe.config
+C:\Users\ThanhHuong\Documents\Visual Studio 2015\Projects\Phan tich thiet ke giai thuat\QHD_DayConTongMax_done\QHD_DayConTongMax\obj\Debug\QHD_DayConTongMax.exe
+C:\Users\ThanhHuong\Documents\Visual Studio 2015\Projects\Phan tich thiet ke giai thuat\QHD_DayConTongMax_done\QHD_DayConTongMax\obj\Debug\QHD_DayConTongMax.pdb

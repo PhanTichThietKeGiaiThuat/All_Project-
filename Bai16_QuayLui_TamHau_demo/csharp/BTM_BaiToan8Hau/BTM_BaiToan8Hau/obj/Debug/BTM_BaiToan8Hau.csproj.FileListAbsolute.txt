@@ -1,0 +1,6 @@
+c:\users\thanhhuong\documents\visual studio 2015\Projects\BTM_BaiToan8Hau\BTM_BaiToan8Hau\bin\Debug\BTM_BaiToan8Hau.exe.config
+c:\users\thanhhuong\documents\visual studio 2015\Projects\BTM_BaiToan8Hau\BTM_BaiToan8Hau\obj\Debug\BTM_BaiToan8Hau.csprojResolveAssemblyReference.cache
+c:\users\thanhhuong\documents\visual studio 2015\Projects\BTM_BaiToan8Hau\BTM_BaiToan8Hau\bin\Debug\BTM_BaiToan8Hau.exe
+c:\users\thanhhuong\documents\visual studio 2015\Projects\BTM_BaiToan8Hau\BTM_BaiToan8Hau\bin\Debug\BTM_BaiToan8Hau.pdb
+c:\users\thanhhuong\documents\visual studio 2015\Projects\BTM_BaiToan8Hau\BTM_BaiToan8Hau\obj\Debug\BTM_BaiToan8Hau.exe
+c:\users\thanhhuong\documents\visual studio 2015\Projects\BTM_BaiToan8Hau\BTM_BaiToan8Hau\obj\Debug\BTM_BaiToan8Hau.pdb

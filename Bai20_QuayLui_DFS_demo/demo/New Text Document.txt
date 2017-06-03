@@ -1,0 +1,117 @@
+#include<conio.h>
+#include<stdio.h>
+#include <iostream>
+using namespace std;
+//cai dat stack bang mang
+template <class T>
+class Stack
+{
+T *S;
+long n,t;
+public:
+long size(){return t+1;}
+Stack(long K=100)
+{
+S=new T[K];
+n=K;
+t=-1;
+}
+bool isEmpty(){return t<0;}
+T top(){return S[t];}
+// T pop(){t--; return S[t+1];}
+T pop(){return S[t--];}
+void push(T o);
+};
+template <class T>
+void Stack<T>::push(T o)
+{
+if(t==n-1)
+{
+n=n*2;
+T *A=new T[n];
+for(long i=0;i<=t;i++) A[i]=S[i];
+delete []S;
+S=A;
+}
+S[++t]=o;
+}
+//Conduong ve 0 version 1.0
+bool dfs(int m,int n)
+{
+//co duong di tu m->n?
+bool *d=new bool [m+5];
+for(int i=0;i<=m;d[i++]=false);
+Stack<int> *S = new Stack<int>(5);
+S->push(m); d[m]=false;
+bool ok=false;
+while(!S->isEmpty())
+{
+int u=S->pop();
+for(int x=1;x*x<=u;x++)
+if(u%x==0)
+{
+int v=(x-1)*(u/x+1);
+if(v>=n && d[v]==false)
+{
+d[v]=true;
+S->push(v);
+}
+if(v==n) {ok=true; break;}
+}
+}
+delete d;
+return ok;
+}
+//ver. 2.0
+void DFS(int m,int n)
+{
+int *d=new int [m+5];
+for(int i=0;i<=m;d[i++]=0);
+Stack<int> *S = new Stack<int>(5);
+S->push(m); d[m]=m+1;
+bool ok=false;
+while(!S->isEmpty())
+{
+int u=S->pop();
+for(int x=1;x*x<=u;x++)
+if(u%x==0)
+{
+int v=(x-1)*(u/x+1);
+if(v>=n && d[v]==0)
+{
+d[v]=u;
+S->push(v);
+}
+if(v==n) {ok=true; break;}
+}
+}
+if(ok==0) cout<<"\nKhong di duoc";
+else
+{
+Stack<int> DD(m+1);
+int k=n;
+DD.push(k);
+while(k!=m)
+{
+k=d[k];
+DD.push(k);
+}
+while(!DD.isEmpty())
+{
+k=DD.pop();
+cout<<k<<"->";
+}
+cout<<"\b\b ";
+}
+delete d;
+}
+int main()
+{
+int n,m;
+cout<<"xuat phat m = "; cin>>m;
+cout<<"ket thuc n = "; cin>>n;
+//if(dfs(m,n)) cout<<"Di duoc";
+//else cout<<"\nkhong di duoc";
+DFS(m,n);
+getch();
+}

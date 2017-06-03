@@ -1,0 +1,6 @@
+c:\users\thanhhuong\documents\visual studio 2015\Projects\NC_BaiToanCaiTui\NC_BaiToanCaiTui\bin\Debug\NC_BaiToanCaiTui.exe.config
+c:\users\thanhhuong\documents\visual studio 2015\Projects\NC_BaiToanCaiTui\NC_BaiToanCaiTui\bin\Debug\NC_BaiToanCaiTui.exe
+c:\users\thanhhuong\documents\visual studio 2015\Projects\NC_BaiToanCaiTui\NC_BaiToanCaiTui\bin\Debug\NC_BaiToanCaiTui.pdb
+c:\users\thanhhuong\documents\visual studio 2015\Projects\NC_BaiToanCaiTui\NC_BaiToanCaiTui\obj\Debug\NC_BaiToanCaiTui.csprojResolveAssemblyReference.cache
+c:\users\thanhhuong\documents\visual studio 2015\Projects\NC_BaiToanCaiTui\NC_BaiToanCaiTui\obj\Debug\NC_BaiToanCaiTui.exe
+c:\users\thanhhuong\documents\visual studio 2015\Projects\NC_BaiToanCaiTui\NC_BaiToanCaiTui\obj\Debug\NC_BaiToanCaiTui.pdb

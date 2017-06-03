@@ -1,0 +1,6 @@
+c:\users\thanhhuong\documents\visual studio 2015\Projects\NC_NguoiDuLich\NC_NguoiDuLich\bin\Debug\NC_NguoiDuLich.exe.config
+C:\Users\ThanhHuong\Documents\Visual Studio 2015\Projects\NC_NguoiDuLich\NC_NguoiDuLich\bin\Debug\NC_NguoiDuLich.exe
+C:\Users\ThanhHuong\Documents\Visual Studio 2015\Projects\NC_NguoiDuLich\NC_NguoiDuLich\bin\Debug\NC_NguoiDuLich.pdb
+C:\Users\ThanhHuong\Documents\Visual Studio 2015\Projects\NC_NguoiDuLich\NC_NguoiDuLich\obj\Debug\NC_NguoiDuLich.csprojResolveAssemblyReference.cache
+C:\Users\ThanhHuong\Documents\Visual Studio 2015\Projects\NC_NguoiDuLich\NC_NguoiDuLich\obj\Debug\NC_NguoiDuLich.exe
+C:\Users\ThanhHuong\Documents\Visual Studio 2015\Projects\NC_NguoiDuLich\NC_NguoiDuLich\obj\Debug\NC_NguoiDuLich.pdb

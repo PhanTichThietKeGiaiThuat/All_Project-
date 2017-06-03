@@ -1,0 +1,7 @@
+﻿Quay lui vét cạn giải bài toán 8 quân hậu
+Về lý thuyết cách đặt quân hậu trên bàn cờ vua: đặt 8 quân hậu trên bàn cờ vua sao 
+không có quân hậu nào cùng hàng cùng cột hay cùng đường chéo với nhau.
+Về tổ chức dữ liệu bàn cờ: bàn cờ vua có 8 dòng, 8 cột, 15 đường chéo theo hình dấu huyền, 
+15 đường chéo theo hình dấu sắc. Vậy mình có 4 mảng, dòng, cột, đường chéo huyền,
+ đường chéo sắc mổi mảng tượng trưng cho 1 đường.
+Đường đánh dấu 1 là có thể đặt quân hậu, đường đánh dấu 0 là không thể đặt quân hậu.

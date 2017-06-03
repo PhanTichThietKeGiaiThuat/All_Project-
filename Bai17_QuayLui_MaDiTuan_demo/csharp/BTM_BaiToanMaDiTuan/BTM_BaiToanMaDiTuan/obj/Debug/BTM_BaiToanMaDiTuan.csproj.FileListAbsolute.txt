@@ -1,0 +1,6 @@
+c:\users\thanhhuong\documents\visual studio 2015\Projects\BTM_BaiToanMaDiTuan\BTM_BaiToanMaDiTuan\bin\Debug\BTM_BaiToanMaDiTuan.exe.config
+c:\users\thanhhuong\documents\visual studio 2015\Projects\BTM_BaiToanMaDiTuan\BTM_BaiToanMaDiTuan\bin\Debug\BTM_BaiToanMaDiTuan.exe
+c:\users\thanhhuong\documents\visual studio 2015\Projects\BTM_BaiToanMaDiTuan\BTM_BaiToanMaDiTuan\bin\Debug\BTM_BaiToanMaDiTuan.pdb
+c:\users\thanhhuong\documents\visual studio 2015\Projects\BTM_BaiToanMaDiTuan\BTM_BaiToanMaDiTuan\obj\Debug\BTM_BaiToanMaDiTuan.csprojResolveAssemblyReference.cache
+c:\users\thanhhuong\documents\visual studio 2015\Projects\BTM_BaiToanMaDiTuan\BTM_BaiToanMaDiTuan\obj\Debug\BTM_BaiToanMaDiTuan.exe
+c:\users\thanhhuong\documents\visual studio 2015\Projects\BTM_BaiToanMaDiTuan\BTM_BaiToanMaDiTuan\obj\Debug\BTM_BaiToanMaDiTuan.pdb

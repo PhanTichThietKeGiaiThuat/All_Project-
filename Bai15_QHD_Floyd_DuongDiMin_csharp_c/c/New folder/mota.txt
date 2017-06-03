@@ -1,0 +1,14 @@
+﻿Ta gọi Dk là ma trận chứa khoảng cách ngắn nhất từ đỉnh i đến đỉnh j trong các đường đi chỉ chứa các nút trong tập {1,2,...,k}. Ta có thể thực hiện theo từng bước sau:
+
+
+Bước 0: Khởi đầu ta đặt D0[i,j] = W[i,j] là đường đi trực tiếp, không qua nút nào cả.
+Bước 1: D1[i,j] = min(D0[i,j], D0[i,1] + D0[1,j])
+...
+Bước k:Dk[i,j] = min(D(k-1)[i,j], D(k-1)[i,k] + D(k-1)[k,j])
+...
+
+
+Đến bước n ta sẽ được ma trận D cần tìm. Trong mỗi bước ta ghi lại vết đường đi trong ma trận P[i,j]
+
+
+Độ phức tạp tính toán là O(n^3).

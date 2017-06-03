@@ -1,0 +1,6 @@
+c:\users\thanhhuong\documents\visual studio 2015\Projects\TL_Kruskal\TL_Kruskal\bin\Debug\TL_Kruskal.exe.config
+c:\users\thanhhuong\documents\visual studio 2015\Projects\TL_Kruskal\TL_Kruskal\bin\Debug\TL_Kruskal.exe
+c:\users\thanhhuong\documents\visual studio 2015\Projects\TL_Kruskal\TL_Kruskal\bin\Debug\TL_Kruskal.pdb
+c:\users\thanhhuong\documents\visual studio 2015\Projects\TL_Kruskal\TL_Kruskal\obj\Debug\TL_Kruskal.csprojResolveAssemblyReference.cache
+c:\users\thanhhuong\documents\visual studio 2015\Projects\TL_Kruskal\TL_Kruskal\obj\Debug\TL_Kruskal.exe
+c:\users\thanhhuong\documents\visual studio 2015\Projects\TL_Kruskal\TL_Kruskal\obj\Debug\TL_Kruskal.pdb
